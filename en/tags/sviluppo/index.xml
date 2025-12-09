@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sviluppo on debugyourself</title>
+    <link>http://localhost:1313/en/tags/sviluppo/</link>
+    <description>Recent content in Sviluppo on debugyourself</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 debugyourself</copyright>
+    <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/tags/sviluppo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Deploying a Hugo website from a private repository on GitHub Pages (2025)</title>
+      <link>http://localhost:1313/en/posts/tutorial/deploy-hugo-private-repo/</link>
+      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/tutorial/deploy-hugo-private-repo/</guid>
+      <description>Deploy di un sito web Hugo usando un repository privato tramite GitHub Pages</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/en/posts/tutorial/deploy-hugo-private-repo/feature.png" />
+    </item>
+    
+  </channel>
+</rss>
