@@ -6,18 +6,8 @@
     <description>Recent content in Systemctl on debugyourself</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2025 debugyourself</copyright>
-    <lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/tags/systemctl/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Sau (HTB) - Writeup</title>
-      <link>http://localhost:1313/en/posts/writeup/sau/</link>
-      <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/en/posts/writeup/sau/</guid>
-      <description>Analisi di Sau su HTB: sfruttamento SSRF su Request Baskets e privilege escalation tramite sudo permissivo e systemctl vulnerabile</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/en/posts/writeup/sau/feature.png" />
-    </item>
+    <copyright>© 2026 debugyourself</copyright>
+    <atom:link href="http://localhost:1313/en/tags/systemctl/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
