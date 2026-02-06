@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Camaleon CMS on debugyourself</title>
+    <link>http://localhost:1313/tags/camaleon-cms/</link>
+    <description>Recent content in Camaleon CMS on debugyourself</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <copyright>© 2025 debugyourself</copyright>
+    <lastBuildDate>Tue, 04 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/camaleon-cms/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Facts (HTB) - Writeup</title>
+      <link>http://localhost:1313/posts/writeup/facter/</link>
+      <pubDate>Tue, 04 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/writeup/facter/</guid>
+      <description>Analisi di Facts su HTB: path traversal e sudo policy permissiva</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/writeup/facter/feature.png" />
+    </item>
+    
+  </channel>
+</rss>
