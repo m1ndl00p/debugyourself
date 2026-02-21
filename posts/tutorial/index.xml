@@ -1,1 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Guide on debugyourself</title><link>https://blog.debugyourself.xyz/posts/tutorial/</link><description>Recent content in Guide on debugyourself</description><generator>Hugo -- gohugo.io</generator><language>it</language><copyright>© 2026 debugyourself</copyright><lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.debugyourself.xyz/posts/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploy sito web Hugo in repository privato con GitHub Pages (2025)</title><link>https://blog.debugyourself.xyz/posts/tutorial/deploy-hugo-private-repo/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://blog.debugyourself.xyz/posts/tutorial/deploy-hugo-private-repo/</guid><description>Tutorial su come pubblicare un sito web Hugo da repository privato usando GitHub Pages, configurando Personal Access Token (PAT) e workflow GitHub Actions per il deploy automatico.</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.debugyourself.xyz/posts/tutorial/deploy-hugo-private-repo/feature.png"/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guide on debugyourself</title>
+    <link>http://localhost:1313/posts/tutorial/</link>
+    <description>Recent content in Guide on debugyourself</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <copyright>© 2026 debugyourself</copyright>
+    <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Deploy sito web Hugo in repository privato con GitHub Pages (2025)</title>
+      <link>http://localhost:1313/posts/tutorial/deploy-hugo-private-repo/</link>
+      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/tutorial/deploy-hugo-private-repo/</guid>
+      <description>Tutorial su come pubblicare un sito web Hugo da repository privato usando GitHub Pages, configurando Personal Access Token (PAT) e workflow GitHub Actions per il deploy automatico.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/tutorial/deploy-hugo-private-repo/feature.png" />
+    </item>
+    
+  </channel>
+</rss>

